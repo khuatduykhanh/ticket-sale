@@ -13,7 +13,6 @@ import CreateReSaleTicket from "../components/ReSaleTicket"
 import CreateReBuyTicket from "../components/BuyReSaleTicket"
 import { VStack, Heading, Box, LinkOverlay, LinkBox} from "@chakra-ui/layout"
 import { Text, Button,Tabs, TabList, TabPanels, Tab, TabPanel } from "@chakra-ui/react"
-import Nhap from "../components/nhap";
 const addressContract='0x5fbdb2315678afecb367f032d93f642f64180aa3'
 
 const Home: NextPage = () => {
