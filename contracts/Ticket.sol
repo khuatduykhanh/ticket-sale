@@ -79,10 +79,6 @@ contract TicketSale is Ownable,ERC721 {
     event CreateTicketId (uint256 _ticketId,string _name, string _describe,string _seat);
     event BuyTicket (uint256 _ticketId,uint256 _price,DetailTicket _ticket);
     constructor() ERC721 ("Ticket", "TCT") {}
-    modifier onlyOwnerOTicket(uint _eventId) {
-        require(eventToOwner[_eventId] == msg.sender,"ERROR1");
-        _;
-    }
     function createInfoCompany(address _company,string memory _name, string memory _address, string memory _phone, string memory _businessCode) external onlyOwner {
         infoSeller[_company] = OrganizationalUintInfo(_name,_address,_phone,_businessCode,true);
         emit CreateInfoCompany(_company,_name,_address,_phone,_businessCode);

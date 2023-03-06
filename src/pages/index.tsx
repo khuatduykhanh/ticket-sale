@@ -19,14 +19,14 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>My DAPP</title>
+        <title>Trang chủ</title>
       </Head>
 
       <Heading as="h3"  my={4}>Ticket Sale</Heading>   
       <Tabs size='md' variant='enclosed'>
   <TabList>
     <Tab>Đăng Nhập</Tab>
-    <Tab>Admin</Tab>
+    
     <Tab>Tạo Sự Kiện</Tab>
     <Tab>Mua vé</Tab>
     <Tab>Check In</Tab>
@@ -56,9 +56,6 @@ const Home: NextPage = () => {
           </NextLink>
         </LinkBox>
       </VStack>
-    </TabPanel>
-    <TabPanel>
-    <CreateCompany addressContract={addressContract} />
     </TabPanel>
     <TabPanel>
     <CreateEvent addressContract={addressContract} />

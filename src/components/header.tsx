@@ -22,7 +22,7 @@ export default function Header() {
       <Input focusBorderColor='#6CB3A7'  boxShadow='2xl' placeholder='Search....' _placeholder={{ color: '#6CB3A7' }} w='500px'  />
       <IconButton boxShadow='2xl' bg="#6CB3A7" ml="10px" aria-label='Search database' icon={<Search2Icon />} />
       <Spacer />
-      <Button mr='20px' borderRightRadius="20" borderLeftRadius="20" color="black" borderColor="#6CB3A7" variant='outline' w='150px' >Tạo Sự Kiện</Button>
+      <Button   mr='20px' borderRightRadius="20" borderLeftRadius="20" color="black" borderColor="#6CB3A7" variant='outline' w='150px' >Tạo Sự Kiện</Button>
       
       <ButtonGroup gap='2'>
       <Button bg="#6CB3A7" color="black" >Đăng Ký</Button>
